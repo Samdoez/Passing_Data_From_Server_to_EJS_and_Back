@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Name Letters</title>
+</head>
+
+<body>
+  <!-- Write your code here -->
+  <!-- it recieves rendering from the server GET method as response,then secondly it will recieve a rendering from the POST-->
+   <h1> <%= Output %> </h1> 
+  <form action="/submit" method="POST"> <!-- this is the link to the POST handler-->
+    <input type="text" name="fname" placeholder="First name">
+    <input type="text" name="lname" placeholder="Last name">
+    <input type="submit" value="OK"> <!-- this will send request back to the server for the POST method to handle it -->
+  </form>
+</body>
+
+</html>
